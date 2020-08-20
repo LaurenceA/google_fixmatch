@@ -1,0 +1,6 @@
+export ML_DATA=~/git/google_fixmatch/data
+export PYTHONPATH=$PYTHONPATH:~/git/google_fixmatch/data
+
+. env3/bin/activate
+
+python fixmatch.py --filters=32 --dataset=cifar10.0@250-1 --train_dir ./experiments/fixmatch
